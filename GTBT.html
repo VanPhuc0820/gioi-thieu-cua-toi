@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Giới Thiệu Bản Thân</title>
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4a90e2;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #4a90e2;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #555;
+            font-weight: 400;
+            font-style: italic;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        .info-list {
+            text-align: left;
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .info-item i {
+            margin-right: 15px;
+            color: #4a90e2;
+            font-size: 1.2em;
+            min-width: 20px;
+        }
+        .info-item span {
+            font-weight: bold;
+            min-width: 100px;
+        }
+        .info-item p {
+            margin: 0;
+        }
+        .info-item a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons a {
+            font-size: 2.5em;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .social-icons .fa-facebook { color: #3b5998; }
+        .social-icons .fa-zalo { color: #0068ff; }
+        .social-icons .fa-github { color: #333; }
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        .skills-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .skills-section h3 {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .skill-icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skill-icons img {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s;
+        }
+        .skill-icons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <img src="C:\Users\vanph\OneDrive\Pictures\avt.jpg" alt="Ảnh đại diện của bạn" class="avatar">
+        
+        <h1>[ NGUYỄN VĂN PHÚC ]</h1>
+        <h2>Sinh viên [ DA22TTB ]</h2>
+        
+        <ul class="info-list">
+            <li class="info-item">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Ngày sinh:</span>
+                <p>[NGÀY 8 THÁNG 11 NĂM 2004]</p>
+            </li>
+            <li class="info-item">
+                <i class="fas fa-venus-mars"></i>
+                <span>Giới tính:</span>
+                <p>[ Nam ]</p>
+            </li>
+            <li class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>Email:</span>
+                <p><a href="mailto:[EMAIL CỦA BẠN]">[ vanphucskt@gmail.com ]</a></p>
+            </li>
+            <li class="info-item">
+                <i class="fas fa-phone"></i>
+                <span>Điện thoại:</span>
+                <p>[0353374456]</p>
+            </li>
+            <li class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Địa chỉ:</span>
+                <p>[ TThanh Mỹ, Châu Thành, Trà Vinh ]</p>
+            </li>
+        </ul>
+        
+        <div class="social-icons">
+            <a href="[https://www.facebook.com/nguyen.phuc.315237]" target="_blank" class="fab fa-facebook"></a>
+            <a href="[https://zalo.me/0353374456]" target="_blank" class="fab-zalo"></a>
+            <a href="[https://github.com/VanPhuc0820]" target="_blank" class="fab fa-github"></a>
+        </div>
+
+        <div class="skills-section">
+            <h3>Skills</h3>
+            <div class="skill-icons">
+                <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML">
+                <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
+                <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="Java">
+                <img src="https://img.icons8.com/windows/48/000000/c-sharp-logo.png" alt="C#">
+                <img src="https://img.icons8.com/color/48/000000/c-programming.png" alt="C">
+                <img src="https://img.icons8.com/color/48/000000/sql.png" alt="SQL">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
